@@ -7,11 +7,68 @@
 
 
 // 3. base styles
-
+body
+  margin: 0
+  background: #444
+  color: #444
+  font-family: helvetica, sans-serif
+  font-size: 0.9em
 
 
 // 4. layout
+.container
+  width: 80%
+  margin: 0 auto
 
+header
+  background: #55d6aa
+
+header::after
+  content: ''
+  display: table
+  clear: both
+
+.logo
+  float: left
+  padding: 10px 0 10px 0
+
+nav
+  float: right
+
+nav ul
+  margin: 0
+  padding: 0
+  list-style: none
+
+nav li
+  display: inline-block
+  margin-left: 30px
+  padding: 0 0 0 0
+  position: relative
+
+nav a
+  text-decoration: none
+  color: #444
+  text-transform: uppercase
+  display: block
+  padding: 30px 0
+  text-align: center
+
+nav a:hover
+  color: black
+
+nav a::before
+  content: ''
+  display: block
+  height: 5px
+  background-color: #444
+  position: absolute
+  top: 0
+  width: 0%
+  transition: all ease-in-out 350ms
+
+nav a:hover::before
+  width: 100%
 
 
 // 5. components
